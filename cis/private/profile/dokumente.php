@@ -140,6 +140,7 @@ if($stjahr=='')
 {
     $stjahr = substr($stsem, 2, 4);
 }
+$stjahrFull = $stjahr . "/" . substr(($stjahr + 1), 2, 2);
 
 $stsem_obj->getAll();
 
@@ -172,15 +173,15 @@ if(defined("CIS_DOKUMENTE_STUDIENBEITRAG_TYPEN"))
 }
 
 // Abfrage immer für WS durchführen
-$stsem = str_replace('SS', 'WS', $stsem);
+$stsem = 'WS' . $stjahr;
 $stsem_zahlung = $konto->getLastStSemBuchungstypen($uid, $buchungstypen, $stsem);
 if ($stsem_zahlung != FALSE && $stsem == $stsem_zahlung)
 {
 	echo "<a href='../pdfExport.php?xsl=Inskription&xml=student.rdf.php&ss=".$stsem."&uid=".$uid."&xsl_stg_kz=".$xsl_stg_kz."'>".$p->t('tools/inskriptionsbestaetigung')."</a>";
-	echo ' - '.$p->t('tools/studienbeitragFuerSSBezahlt',array($stjahr));
+	echo ' - '.$p->t('tools/studienbeitragFuerSJBezahlt',array($stjahrFull));
 }
 else
-	echo $p->t('tools/inskriptionsbestaetigung')." - ".$p->t('tools/studienbeitragFuerSJNochNichtBezahlt',array($stjahr));
+	echo $p->t('tools/inskriptionsbestaetigung')." - ".$p->t('tools/studienbeitragFuerSJNochNichtBezahlt',array($stjahrFull));
 
 echo "<hr>";
 
