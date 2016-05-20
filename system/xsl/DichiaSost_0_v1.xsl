@@ -92,7 +92,7 @@
       </text:p>
       <text:p text:style-name="P1"/>
       <text:p text:style-name="Standard">
-        <text:span text:style-name="T1">Lo studente: <xsl:value-of select="vorname" /> <xsl:value-of select="nachname" /></text:span>
+        <text:span text:style-name="T1">Lo studente: <xsl:value-of select="vorname" /><xsl:text> </xsl:text><xsl:value-of select="nachname" /></text:span>
       </text:p>
       <text:p text:style-name="Standard">
         <text:span text:style-name="T1">Nato/a: il <xsl:value-of select="geburtsdatum" /></text:span>
