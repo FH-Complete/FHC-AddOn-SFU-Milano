@@ -156,7 +156,7 @@ echo $p->t('global/studienjahr')."</b> <SELECT name='stsem' onChange=\"MM_jumpMe
         }
         else
             continue;
-        
+
         if($jahr == $stjahr)
 			echo "<OPTION value='dokumente.php?stjahr=$jahr' selected>$studienjahr</OPTION>";
 		else
@@ -177,7 +177,7 @@ $stsem = 'WS' . $stjahr;
 $stsem_zahlung = $konto->getLastStSemBuchungstypen($uid, $buchungstypen, $stsem);
 if ($stsem_zahlung != FALSE && $stsem == $stsem_zahlung)
 {
-	echo "<a href='../../../../../cis/private/pdfExport.php?xsl=Inskription&xml=student.rdf.php&ss=".$stsem."&uid=".$uid."&xsl_stg_kz=".$xsl_stg_kz."'>".$p->t('tools/inskriptionsbestaetigung')."</a>";
+	echo "<a href='../../../../../cis/private/pdfExport.php?xsl=DichiaSost&xml=student.rdf.php&ss=".$stsem."&uid=".$uid."&xsl_stg_kz=".$xsl_stg_kz."'>".$p->t('tools/inskriptionsbestaetigung')."</a>";
 	echo ' - '.$p->t('tools/studienbeitragFuerSJBezahlt',array($stjahrFull));
 }
 else
