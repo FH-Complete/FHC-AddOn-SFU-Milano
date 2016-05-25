@@ -162,8 +162,8 @@
       <text:p text:style-name="P7"/>
       <text:p text:style-name="P10"/>
       <text:p text:style-name="P8">
-        <text:span text:style-name="T1">L’Università Sigmund Freud Privat Universitat Wien certifica che <xsl:value-of select="nachname" /><xsl:text> </xsl:text><xsl:value-of select="vorname" /> </text:span>
-        <text:span text:style-name="T3">C. F.</text:span>
+        <text:span text:style-name="T1">L’Università Sigmund Freud Privat Universitat Wien certifica che <xsl:value-of select="nachname" /><xsl:text> </xsl:text><xsl:value-of select="vorname" />, </text:span>
+        <text:span text:style-name="T1">C. F.</text:span>
         <text:span text:style-name="T3"> </text:span>
         <text:span text:style-name="T1"><xsl:value-of select="svnr" />,</text:span>
         <text:span text:style-name="T3"> </text:span>
