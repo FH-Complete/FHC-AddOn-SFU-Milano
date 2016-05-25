@@ -111,9 +111,11 @@
         <text:span text:style-name="T1">Di essere iscritto/a</text:span>
       </text:p>
       <text:p text:style-name="Standard">
-        <text:span text:style-name="T1">Per l’<xsl:value-of select="studiensemester_aktuell_bezeichnung" /></text:span>
+        <text:span text:style-name="T1">Per l’anno accademico: <xsl:value-of select="studienjahr_kurzbz" /></text:span>
       </text:p>
-
+	  <text:p text:style-name="Standard">
+        <text:span text:style-name="T1">Al: <xsl:value-of select="studienjahr" />° anno in corso</text:span>
+      </text:p>
       <text:p text:style-name="P9">
         <text:span text:style-name="T1">Del corso di studi: <xsl:value-of select="studiengang_bezeichnung" /></text:span>
       </text:p>
@@ -132,7 +134,19 @@
       <text:p text:style-name="Standard">
         <text:span text:style-name="T1">Dell’Ateneo: Università Sigmund Freud Privat Universität Wien </text:span>
       </text:p>
-
+	  <text:p text:style-name="Standard">
+        <text:span text:style-name="T1">La durata normale del corso di studi è di:
+			<xsl:choose>
+  <xsl:when test="studiengang_typ='b'">
+    3
+  </xsl:when>
+  <xsl:otherwise>
+    2
+  </xsl:otherwise>
+</xsl:choose>
+ anni
+		</text:span>
+      </text:p>
       <text:p text:style-name="P5"/>
       <text:p text:style-name="Standard">
         <text:span text:style-name="T1">Informazioni aggiornate alla data: <xsl:value-of select="tagesdatum" /></text:span>

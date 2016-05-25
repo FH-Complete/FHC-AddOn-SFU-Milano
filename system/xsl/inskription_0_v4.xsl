@@ -167,7 +167,7 @@
         <text:span text:style-name="T3"> </text:span>
         <text:span text:style-name="T1"><xsl:value-of select="svnr" />,</text:span>
         <text:span text:style-name="T3"> </text:span>
-        <text:span text:style-name="T1">nato/a a <xsl:value-of select="geburtsort" /> il <xsl:value-of select="geburtsdatum" />, è iscritto/a al Corso di <xsl:value-of select="studiengang_bezeichnung" /> nell’<xsl:value-of select="studiensemester_aktuell_bezeichnung" />.</text:span>
+        <text:span text:style-name="T1">nato/a a <xsl:value-of select="geburtsort" /> il <xsl:value-of select="geburtsdatum" />, è iscritto/a al Corso di <xsl:value-of select="studiengang_bezeichnung" /> al <xsl:value-of select="studienjahr" />° anno nell’anno accademico <xsl:value-of select="studienjahr_kurzbz" />.</text:span>
       </text:p>
       <text:p text:style-name="P11"/>
       <text:p text:style-name="P11"/>
