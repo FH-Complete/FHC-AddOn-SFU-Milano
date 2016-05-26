@@ -81,7 +81,7 @@
         <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
       </text:sequence-decls>
       <text:p text:style-name="P8">
-        <text:span text:style-name="T1">Matricola: <xsl:value-of select="matrikelnummer" /></text:span>
+        <text:span text:style-name="T1">Matricola: <xsl:value-of select="matr_nr" /></text:span>
       </text:p>
       <text:p text:style-name="P2"/>
       <text:p text:style-name="P6">

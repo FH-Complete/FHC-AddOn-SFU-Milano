@@ -149,7 +149,7 @@
       <text:p text:style-name="P2"/>
       <text:p text:style-name="P2"/>
       <text:p text:style-name="P4">
-        <text:span text:style-name="T1">Matricola:<xsl:text> </xsl:text><xsl:value-of select="matrikelnummer" /></text:span>
+        <text:span text:style-name="T1">Matricola:<xsl:text> </xsl:text><xsl:value-of select="matr_nr" /></text:span>
       </text:p>
       <text:p text:style-name="P4">
         <text:span text:style-name="T1">Protocollo numero progr:</text:span>
