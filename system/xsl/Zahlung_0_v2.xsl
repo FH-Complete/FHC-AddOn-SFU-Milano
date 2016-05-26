@@ -208,7 +208,7 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
       <text:p text:style-name="P3"/>
       <text:p text:style-name="P3"/>
       <text:p text:style-name="P7">
-        <text:span text:style-name="T4">Matricola: <xsl:value-of select="person/matrikelnr" /></text:span>
+        <text:span text:style-name="T4">Matricola: <xsl:value-of select="person/matr_nr" /></text:span>
       </text:p>
       <text:p text:style-name="P5"/>
       <text:p text:style-name="P5"/>
@@ -259,7 +259,7 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
           </table:table-cell>
           <table:table-cell table:style-name="Tabelle1.A1" office:value-type="string">
             <text:p text:style-name="P6">
-              <text:span text:style-name="T5">Semestre di studio</text:span>
+              <text:span text:style-name="T5">Anno Accademico</text:span>
             </text:p>
           </table:table-cell>
           <table:table-cell table:style-name="Tabelle1.A1" office:value-type="string">
@@ -293,7 +293,7 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
   </table:table-cell>
   <table:table-cell table:style-name="Tabelle1.A1" office:value-type="string">
     <text:p text:style-name="P6">
-      <text:span text:style-name="T4"><xsl:value-of select="studiensemester_kurzbz" /></text:span>
+      <text:span text:style-name="T4"><xsl:value-of select="studienjahr_kurzbz" /></text:span>
     </text:p>
   </table:table-cell>
   <table:table-cell table:style-name="Tabelle1.A1" office:value-type="string">
