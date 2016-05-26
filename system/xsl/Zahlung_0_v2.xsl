@@ -215,7 +215,7 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
       <text:p text:style-name="P5"/>
       <text:p text:style-name="P2">
         <text:span text:style-name="T7">Nome e cognome:<text:tab/><text:tab/></text:span>
-        <text:span text:style-name="T8"><xsl:value-of select="person/vorname" /> <xsl:value-of select="person/nachname" /> </text:span>
+        <text:span text:style-name="T8"><xsl:value-of select="person/vorname" /><xsl:text> </xsl:text><xsl:value-of select="person/nachname" /></text:span>
       </text:p>
       <text:p text:style-name="P5"/>
       <text:p text:style-name="P2">
