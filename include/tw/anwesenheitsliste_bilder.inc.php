@@ -243,7 +243,7 @@ $maxX=30;
 $pdf->SetXY($maxX,$maxY);
 $pdf->SetFont('Arial','B',8);
 
-$bezeichnung=mb_convert_encoding('Corso di studi:'.$stgobj->bezeichnung,'ISO-8859-15','UTF-8');
+$bezeichnung=mb_convert_encoding('Corso di studi: '.$stgobj->bezeichnung,'ISO-8859-15','UTF-8');
 $pdf->MultiCell(520,$lineheight,$bezeichnung,0,'L',0);
 
 //FHStg
