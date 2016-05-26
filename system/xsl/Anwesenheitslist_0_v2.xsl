@@ -265,14 +265,15 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
 					<table:table-cell table:style-name="Tabelle1.A2" office:value-type="string">
 						<text:p text:style-name="P12"/>
 					</table:table-cell>
-					<table:table-cell table:style-name="Tabelle1.A2" office:value-type="string">
+					<table:table-cell table:style-name="Tabelle1.A2"  office:value-type="string">
 						<text:p text:style-name="P10">Nome</text:p>
 					</table:table-cell>
-					<table:table-cell table:style-name="Tabelle1.A2" office:value-type="string">
+					<table:table-cell table:style-name="Tabelle1.A2" table:number-columns-spanned="2" office:value-type="string">
 						<text:p text:style-name="P11">Matricola</text:p>
 					</table:table-cell>
+					<table:covered-table-cell/>
 					<table:table-cell table:style-name="Tabelle1.A2" office:value-type="string">
-						<text:p text:style-name="P11">Gruppo</text:p>
+						<text:p text:style-name="P6"/>
 					</table:table-cell>
 					<table:table-cell table:style-name="Tabelle1.A2" office:value-type="string">
 						<text:p text:style-name="P6"/>
@@ -337,6 +338,7 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
 		</table:table-cell>
 	</table:table-row>
 </xsl:template>
+
 <xsl:template match="student">
 	<xsl:variable select="position()" name="number"/>
 	<xsl:choose>
@@ -349,11 +351,11 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
 					<text:p text:style-name="P7">
 						<text:span text:style-name="T1"><xsl:value-of select="nachname" /></text:span><xsl:text> </xsl:text><xsl:value-of select="vorname" /><xsl:text> </xsl:text><xsl:value-of select="zusatz" /></text:p>
 				</table:table-cell>
-				<table:table-cell table:style-name="Tabelle1.A8" office:value-type="string">
+				<table:table-cell table:style-name="Tabelle1.A8" table:number-columns-spanned="2" office:value-type="string">
 					<text:p text:style-name="P8">
 						<xsl:choose>
-							<xsl:when test="personenkennzeichen!=''">
-								<xsl:value-of select="personenkennzeichen" />
+							<xsl:when test="matr_nr!=''">
+								<xsl:value-of select="matr_nr" />
 							</xsl:when>
 							<xsl:otherwise>
 								-
@@ -361,18 +363,8 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
 						</xsl:choose>
 					</text:p>
 				</table:table-cell>
-				<table:table-cell table:style-name="Tabelle1.A8" office:value-type="string">
-					<text:p text:style-name="P8">
-						<xsl:choose>
-							<xsl:when test="semester!=''">
-								<xsl:value-of select="semester" /><xsl:value-of select="verband" /><xsl:value-of select="gruppe" />
-							</xsl:when>
-							<xsl:otherwise>
-								-
-							</xsl:otherwise>
-						</xsl:choose>
-					</text:p>
-				</table:table-cell>
+				<table:covered-table-cell/>
+
 				<table:table-cell table:style-name="Tabelle1.A8" office:value-type="string">
 					<text:p text:style-name="P6"/>
 				</table:table-cell>
@@ -399,12 +391,11 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
 					<text:p text:style-name="P7">
 						<text:span text:style-name="T1"><xsl:value-of select="nachname" /></text:span><xsl:text> </xsl:text><xsl:value-of select="vorname" /><xsl:text> </xsl:text><xsl:value-of select="zusatz" /></text:p>
 				</table:table-cell>
-				<table:table-cell table:style-name="Tabelle1.A2" office:value-type="string">
-					<text:p text:style-name="P8"><xsl:value-of select="personenkennzeichen" /></text:p>
+				<table:table-cell table:style-name="Tabelle1.A2" table:number-columns-spanned="2" office:value-type="string">
+					<text:p text:style-name="P8"><xsl:value-of select="matr_nr" /></text:p>
 				</table:table-cell>
-				<table:table-cell table:style-name="Tabelle1.A2" office:value-type="string">
-					<text:p text:style-name="P8"><xsl:value-of select="semester" /><xsl:value-of select="verband" /><xsl:value-of select="gruppe" /></text:p>
-				</table:table-cell>
+				<table:covered-table-cell/>
+
 				<table:table-cell table:style-name="Tabelle1.A2" office:value-type="string">
 					<text:p text:style-name="P6"/>
 				</table:table-cell>
