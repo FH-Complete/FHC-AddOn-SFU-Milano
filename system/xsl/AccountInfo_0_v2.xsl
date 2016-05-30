@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet 
-  xmlns:fo="http://www.w3.org/1999/XSL/Format" 
+<xsl:stylesheet
+  xmlns:fo="http://www.w3.org/1999/XSL/Format"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
-  xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" 
-  xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" 
-  xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" 
-  xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" 
+  xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0"
+  xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0"
+  xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0"
+  xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0"
   xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0"
 >
 <xsl:output method="xml" version="1.0" indent="yes"/>
@@ -135,11 +135,11 @@
       <text:p text:style-name="P1"/>
       <text:p text:style-name="P1"/>
       <text:p text:style-name="P4">
-        <text:span text:style-name="T2">Account Mini FAQ</text:span>
+        <text:span text:style-name="T2">Istruzioni</text:span>
       </text:p>
       <text:p text:style-name="P2"/>
       <text:p text:style-name="Standard">
-        <text:span text:style-name="T4">Come attivo il mio account?</text:span>
+        <text:span text:style-name="T4">Attivazione account:</text:span>
       </text:p>
       <text:p text:style-name="Standard">
         <text:span text:style-name="T5">Aprire con il proprio browser l’indirizzo </text:span>
@@ -153,7 +153,7 @@
       </text:p>
       <text:p text:style-name="P2"/>
       <text:p text:style-name="Standard">
-        <text:span text:style-name="T4">Come cambio la mia password?</text:span>
+        <text:span text:style-name="T4">Cambio password:</text:span>
       </text:p>
       <text:p text:style-name="Standard">
         <text:span text:style-name="T5">Per cambiare la propria password eseguire il login con il proprio browser all’indirizzo </text:span>
@@ -166,38 +166,7 @@
       <text:p text:style-name="P2"/>
       <text:p text:style-name="P2"/>
       <text:p text:style-name="P2"/>
-      <text:p text:style-name="P4">
-        <text:span text:style-name="T2">Account Mini FAQ </text:span>
-      </text:p>
-      <text:p text:style-name="P4">
-        <text:span text:style-name="T2">(English)</text:span>
-      </text:p>
-      <text:p text:style-name="P2"/>
-      <text:p text:style-name="Standard">
-        <text:span text:style-name="T6">Account activation:</text:span>
-      </text:p>
-      <text:p text:style-name="Standard">
-        <text:span text:style-name="T7">Open your web browser and go to </text:span>
-        <text:a xlink:type="simple" xlink:href="https://cis.milano-sfu.it/cis/public/accountactivation.php">
-          <text:span text:style-name="T5">https://cis.milano-sfu.it/cis/public/accountactivation.php</text:span>
-        </text:a>
-        <text:span text:style-name="T5"> </text:span>
-      </text:p>
-      <text:p text:style-name="Standard">
-        <text:span text:style-name="T7">Enter your user name and activation key. Enter a new password for your account.</text:span>
-      </text:p>
-      <text:p text:style-name="P3"/>
-      <text:p text:style-name="P5">
-        <text:span text:style-name="T8">Password Change:</text:span>
-      </text:p>
-      <text:p text:style-name="Standard">
-        <text:span text:style-name="T9">To change password open your web browser, login to </text:span>
-        <text:a xlink:type="simple" xlink:href="https://cis.milano-sfu.it">
-          <text:span text:style-name="T5">https://cis.milano-sfu.it</text:span>
-        </text:a>
-        <text:span text:style-name="T5"> and</text:span>
-        <text:span text:style-name="T9"> go to the menu on the left under "My profile &gt; Change Password".</text:span>
-      </text:p>
+
       <text:p text:style-name="Standard"/>
     </office:text>
   </office:body>

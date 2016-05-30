@@ -28,5 +28,8 @@ $this->phrasen['passwort/Umlaute']='Non sono consentiti i caratteri accentati.';
 $this->phrasen['passwort/Ziffer']='La password deve contenere almeno un carattere numerico.';
 $this->phrasen['passwort/ZuHttpsWechseln']='Passa ora a una connessione sicura (https)';
 
+$this->phrasen['passwort/CodeOderUsernameFalsch']='Codice o nome utente errato';
+$this->phrasen['passwort/CaptchaCodeFalsch']='Il codice antispam inserito è errato';
+$this->phrasen['passwort/AccountErfolgreichAktiviert']='L’account è stato attivato con successo';
+$this->phrasen['passwort/WeiterZumLogin']='Prosegui al login';
 ?>
-
