@@ -446,7 +446,9 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
 		</text:p>
 	  </table:table-cell>
 	  <table:table-cell table:style-name="Tabelle1.A1" office:value-type="string">
-		<text:p text:style-name="P3"/>
+		<text:p text:style-name="P3">
+			<text:span text:style-name="T3"><xsl:value-of select="wuensche" /></text:span>
+		</text:p>
 	  </table:table-cell>
 	  <table:table-cell table:style-name="Tabelle1.G2" office:value-type="string">
 		<text:p text:style-name="P3"/>
