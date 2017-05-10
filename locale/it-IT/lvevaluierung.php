@@ -1,6 +1,6 @@
 <?php
 
-$this->phrasen['lvevaluierung/einleitungstext]']='<h2>Scheda di valutazione corsi</h2>
+$this->phrasen['lvevaluierung/einleitungstext']='<h2>Scheda di valutazione corsi</h2>
 Il sondaggio serve per la valutazione dei corsi PS/SE/UE/VO<br>
 Il questionario è anonimo e le informazioni fornite servono per valutare la qualità interna<br>
 L’indagine è divisa in aree tematiche che possono essere valutate sulla base di una scala da  1 a 6 come segue:<br>
