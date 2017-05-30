@@ -298,7 +298,7 @@ xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0"
 		<text:p text:style-name="P4">
 			<text:s/>
 		</text:p>
-		<text:p text:style-name="P4">Durchschnittsbewertung: <xsl:value-of select="format-number(durchschnitt, '#.00')"/></text:p>
+		<text:p text:style-name="P4">Valutazione media: <xsl:value-of select="format-number(durchschnitt, '#.00')"/></text:p>
 <text:p text:style-name="P4"/>
 	</xsl:when>
 	<xsl:when test="frage_typ='text'">

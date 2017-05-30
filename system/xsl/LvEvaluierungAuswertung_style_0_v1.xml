@@ -227,8 +227,8 @@ office:version="1.2">
 	<office:master-styles>
 		<style:master-page style:name="Standard" style:page-layout-name="Mpm1">
 			<style:header>
-				<text:p text:style-name="MP1">LV-Evaluierung <xsl:value-of select="bezeichnung" /><text:tab/><xsl:value-of select="studiensemester" /></text:p>
-				<text:p text:style-name="MP2">ID 14<text:tab/>
+				<text:p text:style-name="MP1">Valutazione <xsl:value-of select="bezeichnung" /><text:tab/><xsl:value-of select="studiensemester" /></text:p>
+				<text:p text:style-name="MP2"><text:tab/>
 					<text:tab/>Pagina <text:page-number text:select-page="current">4</text:page-number>/<text:page-count>4</text:page-count>
 				</text:p>
 			</style:header>
