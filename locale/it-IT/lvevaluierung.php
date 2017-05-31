@@ -5,5 +5,6 @@ I codici per la valutazione di un corso sono distribuiti al termine del corso in
 Il presente sistema garantisce l’anonimato.
 ';
 $this->phrasen['lvevaluierung/infotextAllgemein']='';
+$this->phrasen['lvevaluierung/keineAuswahl']='nessuna risposta';
 
 ?>

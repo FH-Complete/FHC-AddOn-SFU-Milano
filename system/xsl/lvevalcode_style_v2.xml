@@ -194,7 +194,7 @@ xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn
         <text:p text:style-name="MP1">Valutazione n. <xsl:value-of select="lvevaluierung_id" /><text:tab/><text:tab/>Pagina <text:page-number text:select-page="current">0</text:page-number> / <text:page-count>7</text:page-count></text:p>
       </style:header>
       <style:footer>
-        <text:p text:style-name="MP2">Creato su <text:date style:data-style-name="N36" text:date-value="2015-12-07T08:10:18.108242307">07.12.2015</text:date></text:p>
+        <text:p text:style-name="MP2">Creato il <text:date style:data-style-name="N36" text:date-value="2015-12-07T08:10:18.108242307">07.12.2015</text:date></text:p>
       </style:footer>
     </style:master-page>
   </office:master-styles>

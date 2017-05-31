@@ -254,14 +254,12 @@ xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn
 	  <table:table-column table:style-name="TabelleUebernahmeUnterschrift.C"/>
 	  <table:table-row>
 		<table:table-cell table:style-name="TabelleUebernahmeUnterschrift.A1" office:value-type="string">
-		<text:p text:style-name="P6">________________________</text:p>
 		<text:p text:style-name="P6">data e firma del docente</text:p>
 		</table:table-cell>
 		<table:table-cell table:style-name="TabelleUebernahmeUnterschrift.B1" office:value-type="string">
 		<text:p text:style-name="P6"></text:p>
 		</table:table-cell>
 		<table:table-cell table:style-name="TabelleUebernahmeUnterschrift.A1" office:value-type="string">
-		<text:p text:style-name="P6">________________________</text:p>
 		<text:p text:style-name="P6">data e firma di un rappresentante per la classe</text:p>
 		</table:table-cell>
 	  </table:table-row>
