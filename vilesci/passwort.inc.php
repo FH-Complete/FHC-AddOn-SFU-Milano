@@ -140,7 +140,7 @@ function change_password($passwort_alt, $passwort_neu, $uid)
 		// Alles OK Passwort geaendert
 		return true;
 	}
-	else 	
-		return 'Passwortänderung fehlgeschlagen. Mögliche Gründe: Passwort wurde früher bereits verwendet; Passwort wurde innerhalb der letzten 24 Stunden bereits geändert.';
+	else
+		return 'Cambio password non avvenuto. Possibili cause: la password è già stata utilizzata in passato o la password è già stata cambiata nelle ultime 24 ore.';
 }
 ?>
