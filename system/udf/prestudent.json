@@ -1,0 +1,59 @@
+[{
+	"name": "udf_isee_presentato",
+	"sort": 1,
+	"type": "checkbox",
+	"title": "udf/iseePresentatoTitle",
+	"description": "udf/iseePresentatoDescription",
+	"defaultValue": false
+},
+{
+	"name": "udf_fascia_ise",
+	"sort": 2,
+	"type": "dropdown",
+	"title": "udf/fasciaIseeTitle",
+	"listValues": {"enum": ["A", "B", "C", "D"]},
+	"validation": {"regex": [{"language": "php", "expression": "/^[a-zA-Z]+$/"}, {"language": "js", "expression": "/[a-zA-Z]*/"}], "required": false},
+	"description": "udf/fasciaIseeDescription",
+	"placeholder": "udf/fasciaIseePlaceholder",
+	"defaultValue": ""
+},
+{
+	"name": "udf_borsa",
+	"sort": 3,
+	"type": "checkbox",
+	"title": "udf/borsaTitle",
+	"description": "udf/borsaDescription",
+	"defaultValue": false
+},
+{
+	"name": "udf_borsa_tipo",
+	"sort": 4,
+	"type": "dropdown",
+	"title": "udf/borsaTipoTitle",
+	"listValues": {"enum": ["100%", "50%", "30%"]},
+	"validation": {"regex": [{"language": "php", "expression": "/^[0-9%]+$/"}, {"language": "js", "expression": "/[0-9%]*/"}], "required": false},
+	"description": "udf/borsaTipoDescription",
+	"placeholder": "udf/borsaTipoPlaceholder",
+	"defaultValue": ""
+},
+{
+	"name": "udf_dsa",
+	"sort": 5,
+	"type": "checkbox",
+	"title": "udf/dsaTitle",
+	"description": "udf/dsaDescription",
+	"defaultValue": false
+},
+{
+	"name": "udf_dsa_tipo",
+	"sort": 6, "type":
+	"multipledropdown",
+	"title": "udf/dsaTipoTitle",
+	"listValues": {"enum": ["dislessia","discalculia","disgrafia","disortografia"]},
+	"validation": {"regex": [{"language": "php",
+	"expression": "/^[0-9a-zA-Z]+$/"}, {"language": "js",
+	"expression": "/[0-9a-zA-Z]*/"}], "required": false},
+	"description": "udf/dsaTipoDescription",
+	"placeholder": "udf/dsaTipoPlaceholder",
+	"defaultValue": ""
+}]
